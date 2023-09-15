@@ -364,8 +364,8 @@ class Store {
       return seatLabel(seatInfo);
     }
 
-    const rowIndex = this.getRowLabel(seatInfo.index.row);
-    const columnIndex = this.getColumnLabel(seatInfo.index.col);
+    const rowIndex = this.getRowLabel(index.row);
+    const columnIndex = this.getColumnLabel(index.col);
 
     return `${rowIndex}${columnIndex}`;
   }
