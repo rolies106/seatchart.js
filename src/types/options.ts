@@ -1,5 +1,6 @@
 import { SeatTypeDefault, SeatType } from 'types/seat-type';
 import { SeatIndex } from 'types/seat-index';
+import { SeatInfo } from './seat-info';
 
 /**
  * Options to configure a Seatchart.
@@ -50,7 +51,7 @@ interface Options {
     /**
      * Seat label generator.
      */
-    seatLabel?: (index: SeatIndex) => string;
+    seatLabel?: (index: SeatInfo) => string;
     /**
      * Row indexers options.
      */
